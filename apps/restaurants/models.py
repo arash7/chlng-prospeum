@@ -106,5 +106,5 @@ class DishIngredient(models.Model):
     ingredient = models.ForeignKey(Ingredient, on_delete=models.PROTECT)
     portion = models.DecimalField(_('portion'), max_digits=5, decimal_places=2, help_text=_('portion used in dish'))
 
-
-
+    class Meta:
+        unique_together = ('dish', 'ingredient')
