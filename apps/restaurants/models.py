@@ -32,7 +32,7 @@ class Restaurant(models.Model):
 
     created_time = models.DateTimeField(_('created time'), auto_now_add=True)
     updated_time = models.DateTimeField(_('updated time'), auto_now=True)
-    name = models.CharField(_('name'), max_length=150, unique=True)
+    name = models.CharField(_('name'), max_length=50, unique=True)
     restaurant_type = models.CharField(_('type'), max_length=2, choices=TYPE_CHOICES)
     city = models.ForeignKey(City, on_delete=models.PROTECT)
     is_enable = models.BooleanField(_('is enable?'), default=True)
@@ -59,7 +59,7 @@ class Ingredient(models.Model):
         (TYPE_VEGAN, _('vegan')),
     )
 
-    name = models.CharField(_('name'), max_length=150)
+    name = models.CharField(_('name'), max_length=20)
     price = models.DecimalField(_('price'), max_digits=10, decimal_places=2, help_text=_('Price per portion'))
     type = models.PositiveSmallIntegerField(_('type'), choices=TYPE_CHOICES)
     portion = models.CharField(_('portion'), max_length=10, help_text=_('Just for display, eg: litre, gr, ounce, cup, etc..'))
@@ -73,7 +73,7 @@ class Food(models.Model):
         (TYPE_BEVERAGE, _('beverage')),
     )
 
-    name = models.CharField(_('name'), max_length=150)
+    name = models.CharField(_('name'), max_length=40)
     price = models.DecimalField(_('price'), max_digits=20, decimal_places=2, default=0)
     type = models.PositiveSmallIntegerField(_('type'), choices=TYPE_CHOICES, editable=False)
     ingredients = models.ManyToManyField(Ingredient, through='DishIngredient')
@@ -102,7 +102,7 @@ class Dish(Food):
 
 
 class DishIngredient(models.Model):
-    dish = models.ForeignKey(Food, on_delete=models.PROTECT)
+    dish = models.ForeignKey(Food, on_delete=models.CASCADE)
     ingredient = models.ForeignKey(Ingredient, on_delete=models.PROTECT)
     portion = models.DecimalField(_('portion'), max_digits=5, decimal_places=2, help_text=_('portion used in dish'))
 
