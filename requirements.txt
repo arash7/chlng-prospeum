@@ -1,0 +1,13 @@
+Django>=3.1
+python-decouple
+djangorestframework
+djangorestframework-simplejwt
+celery>=4.4, <4.5
+
+psycopg2_binary
+# requests
+# python-memcached
+# Pillow
+
+# django-filter
+# drf-yasg
