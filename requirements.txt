@@ -1,6 +1,7 @@
 Django>=3.1
 python-decouple
 djangorestframework
+PyJWT==1.7.1
 djangorestframework-simplejwt
 celery>=4.4, <4.5
 
@@ -10,4 +11,4 @@ psycopg2_binary
 # Pillow
 
 # django-filter
-# drf-yasg
+drf-yasg

@@ -41,8 +41,10 @@ WSGI_APPLICATION = 'prospeum.wsgi.application'
 # Application definition
 
 INSTALLED_APPS = [
+    'apps.restaurants',
     'apps.accounts',
 
+    'drf_yasg',
     'rest_framework',
 
     'django.contrib.admin',
