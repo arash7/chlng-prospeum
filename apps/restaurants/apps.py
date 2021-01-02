@@ -2,4 +2,7 @@ from django.apps import AppConfig
 
 
 class RestaurantsConfig(AppConfig):
-    name = 'restaurants'
+    name = 'apps.restaurants'
+
+    def ready(self):
+        import apps.restaurants.signals

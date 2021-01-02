@@ -12,3 +12,4 @@ psycopg2_binary
 
 # django-filter
 drf-yasg
+django-seed

@@ -64,6 +64,9 @@ class Ingredient(models.Model):
     type = models.PositiveSmallIntegerField(_('type'), choices=TYPE_CHOICES)
     portion = models.CharField(_('portion'), max_length=10, help_text=_('Just for display, eg: litre, gr, ounce, cup, etc..'))
 
+    def __str__(self):
+        return self.name
+
 
 class Food(models.Model):
     TYPE_DISH = 1
@@ -102,7 +105,7 @@ class Dish(Food):
 
 
 class DishIngredient(models.Model):
-    dish = models.ForeignKey(Food, on_delete=models.CASCADE)
+    dish = models.ForeignKey(Food, on_delete=models.CASCADE, related_name='ing_list')
     ingredient = models.ForeignKey(Ingredient, on_delete=models.PROTECT)
     portion = models.DecimalField(_('portion'), max_digits=5, decimal_places=2, help_text=_('portion used in dish'))
 

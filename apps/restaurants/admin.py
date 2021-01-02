@@ -40,10 +40,18 @@ class DishIngredientInline(admin.TabularInline):
 
 @admin.register(Beverage)
 class BeverageAdmin(FoodAdmin):
-    pass
+
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        return qs.filter(type=Beverage.TYPE_BEVERAGE)
 
 
 @admin.register(Dish)
 class DishAdmin(FoodAdmin):
     readonly_fields = ('price', )
     inlines = (DishIngredientInline,)
+    save_as_continue = False
+
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        return qs.filter(type=Dish.TYPE_DISH)
