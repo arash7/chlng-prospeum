@@ -41,6 +41,7 @@ WSGI_APPLICATION = 'prospeum.wsgi.application'
 # Application definition
 
 INSTALLED_APPS = [
+    'apps.orders',
     'apps.restaurants',
     'apps.accounts',
 

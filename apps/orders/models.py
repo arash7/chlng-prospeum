@@ -10,6 +10,16 @@ class Order(models.Model):
     guest = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT)
     restaurant = models.ForeignKey('restaurants.Restaurant', on_delete=models.PROTECT)
     reservation_time = DateTimeRangeField(_('reservation time'))
+    reservation_date = models.DateField(_('reservation date'))
     is_takeout = models.BooleanField(_('is takeout'), default=False)
 
-    foods = models.ManyToManyField('restaurants.Food', blank=False)
+    content = models.ManyToManyField('restaurants.Food', through='OrderContent', blank=False)
+
+
+class OrderContent(models.Model):
+    order = models.ForeignKey(Order, on_delete=models.CASCADE)
+    food = models.ForeignKey('restaurants.Food', on_delete=models.PROTECT)
+    qty = models.PositiveIntegerField(_('quantity'))
+
+    class Meta:
+        unique_together = ('order', 'food')
