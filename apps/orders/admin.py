@@ -12,7 +12,8 @@ class OrderContentInline(admin.TabularInline):
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ('guest', 'restaurant', 'reservation_date', 'reservation_time', 'is_takeout')
+    list_display = ('restaurant', 'guest', 'reservation_date', 'price', 'is_takeout')
     search_fields = ('name', )
     list_filter = ('is_takeout', 'restaurant')
+    raw_id_fields = ('guest', 'restaurant')
     inlines = (OrderContentInline,)

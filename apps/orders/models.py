@@ -1,7 +1,7 @@
 from django.db import models
 from django.conf import settings
 from django.utils.translation import ugettext_lazy as _
-from django.contrib.postgres.fields import DateTimeRangeField
+# from django.contrib.postgres.fields import DateTimeRangeField
 
 
 class Order(models.Model):
@@ -9,11 +9,18 @@ class Order(models.Model):
     updated_time = models.DateTimeField(_('updated time'), auto_now=True)
     guest = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT)
     restaurant = models.ForeignKey('restaurants.Restaurant', on_delete=models.PROTECT)
-    reservation_time = DateTimeRangeField(_('reservation time'))
     reservation_date = models.DateField(_('reservation date'))
+    # reservation_time = DateTimeRangeField(_('reservation time'))
     is_takeout = models.BooleanField(_('is takeout'), default=False)
 
     content = models.ManyToManyField('restaurants.Food', through='OrderContent', blank=False)
+
+    def __str__(self):
+        return f'{self.restaurant_id} - {self.guest_id} - {self.reservation_date}'
+
+    @property
+    def price(self):
+        return sum([oc.qty * oc.food.price for oc in OrderContent.objects.select_related('food').filter(order=self)])
 
 
 class OrderContent(models.Model):

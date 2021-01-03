@@ -11,7 +11,7 @@ class UserAdmin(DjangoUserAdmin):
     list_filter = ('is_staff', 'is_superuser', 'is_active', 'role', 'groups')
     fieldsets = (
         (None, {'fields': ('username', 'password')}),
-        (_('Personal info'), {'fields': ('first_name', 'last_name', 'email')}),
+        (_('Personal info'), {'fields': ('first_name', 'last_name', 'email', 'address')}),
         (_('Permissions'), {
             'fields': ('is_active', 'is_staff', 'is_superuser', 'role', 'groups', 'user_permissions'),
         }),
