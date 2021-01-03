@@ -1,0 +1,605 @@
+[
+{
+  "model": "restaurants.city",
+  "pk": 1,
+  "fields": {
+    "created_time": "2020-12-31T12:07:25.423Z",
+    "updated_time": "2020-12-31T12:07:25.424Z",
+    "name": "Munich"
+  }
+},
+{
+  "model": "restaurants.city",
+  "pk": 2,
+  "fields": {
+    "created_time": "2020-12-31T12:07:36.742Z",
+    "updated_time": "2020-12-31T12:07:36.742Z",
+    "name": "Stuttgart"
+  }
+},
+{
+  "model": "restaurants.city",
+  "pk": 3,
+  "fields": {
+    "created_time": "2020-12-31T12:07:48.693Z",
+    "updated_time": "2020-12-31T12:07:48.693Z",
+    "name": "Berlin"
+  }
+},
+{
+  "model": "restaurants.city",
+  "pk": 4,
+  "fields": {
+    "created_time": "1977-02-07T09:00:30Z",
+    "updated_time": "1991-11-14T22:59:32Z",
+    "name": "Letter from wear successful while agree send."
+  }
+},
+{
+  "model": "restaurants.city",
+  "pk": 5,
+  "fields": {
+    "created_time": "2000-11-20T19:39:13Z",
+    "updated_time": "1987-01-08T17:27:27Z",
+    "name": "Strategy site loss six rock explain senior."
+  }
+},
+{
+  "model": "restaurants.city",
+  "pk": 6,
+  "fields": {
+    "created_time": "2016-01-03T08:37:58Z",
+    "updated_time": "1996-03-08T23:58:33Z",
+    "name": "Hear difficult bad also."
+  }
+},
+{
+  "model": "restaurants.city",
+  "pk": 7,
+  "fields": {
+    "created_time": "2011-02-10T10:25:03Z",
+    "updated_time": "2006-12-02T16:55:52Z",
+    "name": "Among soon sing next ground."
+  }
+},
+{
+  "model": "restaurants.city",
+  "pk": 8,
+  "fields": {
+    "created_time": "2017-05-06T22:31:35Z",
+    "updated_time": "2010-12-01T22:53:58Z",
+    "name": "Catch instead yes alone."
+  }
+},
+{
+  "model": "restaurants.restaurant",
+  "pk": 1,
+  "fields": {
+    "created_time": "2020-12-31T12:10:35.716Z",
+    "updated_time": "2020-12-31T12:12:41.618Z",
+    "name": "c1",
+    "restaurant_type": "ch",
+    "city": 1,
+    "is_enable": true
+  }
+},
+{
+  "model": "restaurants.restaurant",
+  "pk": 2,
+  "fields": {
+    "created_time": "2020-12-31T12:10:47.025Z",
+    "updated_time": "2020-12-31T12:12:46.627Z",
+    "name": "c2",
+    "restaurant_type": "ch",
+    "city": 1,
+    "is_enable": true
+  }
+},
+{
+  "model": "restaurants.restaurant",
+  "pk": 3,
+  "fields": {
+    "created_time": "2020-12-31T12:11:08.686Z",
+    "updated_time": "2020-12-31T12:12:51.357Z",
+    "name": "c3",
+    "restaurant_type": "ch",
+    "city": 2,
+    "is_enable": true
+  }
+},
+{
+  "model": "restaurants.restaurant",
+  "pk": 4,
+  "fields": {
+    "created_time": "2020-12-31T12:11:27.641Z",
+    "updated_time": "2020-12-31T12:12:56.952Z",
+    "name": "i1",
+    "restaurant_type": "it",
+    "city": 2,
+    "is_enable": true
+  }
+},
+{
+  "model": "restaurants.restaurant",
+  "pk": 5,
+  "fields": {
+    "created_time": "2020-12-31T12:12:36.154Z",
+    "updated_time": "2020-12-31T12:12:36.154Z",
+    "name": "b1",
+    "restaurant_type": "bv",
+    "city": 1,
+    "is_enable": true
+  }
+},
+{
+  "model": "restaurants.restaurant",
+  "pk": 6,
+  "fields": {
+    "created_time": "2020-12-31T12:13:47.013Z",
+    "updated_time": "2020-12-31T12:13:47.013Z",
+    "name": "i2",
+    "restaurant_type": "it",
+    "city": 3,
+    "is_enable": true
+  }
+},
+{
+  "model": "restaurants.restaurant",
+  "pk": 7,
+  "fields": {
+    "created_time": "2020-12-31T12:13:56.998Z",
+    "updated_time": "2020-12-31T12:13:56.998Z",
+    "name": "b2",
+    "restaurant_type": "bv",
+    "city": 3,
+    "is_enable": true
+  }
+},
+{
+  "model": "restaurants.restaurant",
+  "pk": 8,
+  "fields": {
+    "created_time": "1979-09-25T11:48:54Z",
+    "updated_time": "1987-12-25T11:39:06Z",
+    "name": "Tv knowledge fact party.",
+    "restaurant_type": "bv",
+    "city": 7,
+    "is_enable": true
+  }
+},
+{
+  "model": "restaurants.restaurant",
+  "pk": 9,
+  "fields": {
+    "created_time": "1991-09-20T00:23:03Z",
+    "updated_time": "2014-10-23T13:50:17Z",
+    "name": "Range traditional third thought special.",
+    "restaurant_type": "ch",
+    "city": 8,
+    "is_enable": true
+  }
+},
+{
+  "model": "restaurants.restaurant",
+  "pk": 10,
+  "fields": {
+    "created_time": "1970-04-24T11:41:51Z",
+    "updated_time": "1988-11-07T20:32:22Z",
+    "name": "Spend appear carry laugh cold control Congress.",
+    "restaurant_type": "bv",
+    "city": 6,
+    "is_enable": true
+  }
+},
+{
+  "model": "restaurants.restaurant",
+  "pk": 11,
+  "fields": {
+    "created_time": "1979-04-04T11:44:34Z",
+    "updated_time": "1971-09-02T12:52:38Z",
+    "name": "Able top challenge safe from.",
+    "restaurant_type": "bv",
+    "city": 4,
+    "is_enable": true
+  }
+},
+{
+  "model": "restaurants.restaurant",
+  "pk": 12,
+  "fields": {
+    "created_time": "1996-07-03T04:58:34Z",
+    "updated_time": "1997-02-21T05:37:23Z",
+    "name": "Language company history adult sound take skill.",
+    "restaurant_type": "ch",
+    "city": 6,
+    "is_enable": true
+  }
+},
+{
+  "model": "restaurants.ingredient",
+  "pk": 1,
+  "fields": {
+    "name": "Carrot",
+    "price": "0.33",
+    "type": 5,
+    "portion": "Kg"
+  }
+},
+{
+  "model": "restaurants.ingredient",
+  "pk": 2,
+  "fields": {
+    "name": "Milk",
+    "price": "0.98",
+    "type": 4,
+    "portion": "Litre"
+  }
+},
+{
+  "model": "restaurants.ingredient",
+  "pk": 3,
+  "fields": {
+    "name": "Sugar",
+    "price": "0.69",
+    "type": 5,
+    "portion": "Gr"
+  }
+},
+{
+  "model": "restaurants.ingredient",
+  "pk": 4,
+  "fields": {
+    "name": "Egg",
+    "price": "0.86",
+    "type": 1,
+    "portion": "Number"
+  }
+},
+{
+  "model": "restaurants.ingredient",
+  "pk": 5,
+  "fields": {
+    "name": "Flour",
+    "price": "0.30",
+    "type": 4,
+    "portion": "Kg"
+  }
+},
+{
+  "model": "restaurants.ingredient",
+  "pk": 6,
+  "fields": {
+    "name": "Steak",
+    "price": "1.23",
+    "type": 2,
+    "portion": "Kg"
+  }
+},
+{
+  "model": "restaurants.ingredient",
+  "pk": 7,
+  "fields": {
+    "name": "Bacon",
+    "price": "2.45",
+    "type": 3,
+    "portion": "Kg"
+  }
+},
+{
+  "model": "restaurants.ingredient",
+  "pk": 8,
+  "fields": {
+    "name": "Chicken Fillet",
+    "price": "1.07",
+    "type": 1,
+    "portion": "Slice"
+  }
+},
+{
+  "model": "restaurants.ingredient",
+  "pk": 9,
+  "fields": {
+    "name": "Salt",
+    "price": "0.11",
+    "type": 5,
+    "portion": "Spoon"
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 1,
+  "fields": {
+    "name": "Which personal generation rise medical.",
+    "price": "0.62",
+    "type": 22284
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 2,
+  "fields": {
+    "name": "Receive idea religious across fish let.",
+    "price": "0.09",
+    "type": 2062
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 3,
+  "fields": {
+    "name": "Generation beyond treat.",
+    "price": "0.75",
+    "type": 26069
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 4,
+  "fields": {
+    "name": "Price admit state way interesting film.",
+    "price": "0.34",
+    "type": 79
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 5,
+  "fields": {
+    "name": "Stage third say could.",
+    "price": "0.77",
+    "type": 30174
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 6,
+  "fields": {
+    "name": "Wine",
+    "price": "0.50",
+    "type": 2
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 7,
+  "fields": {
+    "name": "Apple Juice",
+    "price": "0.73",
+    "type": 2
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 8,
+  "fields": {
+    "name": "Coke",
+    "price": "0.62",
+    "type": 2
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 9,
+  "fields": {
+    "name": "Beer",
+    "price": "0.80",
+    "type": 2
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 10,
+  "fields": {
+    "name": "Cocktail",
+    "price": "0.79",
+    "type": 2
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 11,
+  "fields": {
+    "name": "Executive close exist outside.",
+    "price": "5.02",
+    "type": 1
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 12,
+  "fields": {
+    "name": "Vegan & Vegeterian",
+    "price": "2.59",
+    "type": 1
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 13,
+  "fields": {
+    "name": "All Vegan",
+    "price": "0.38",
+    "type": 1
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 14,
+  "fields": {
+    "name": "My child peace machine work national.",
+    "price": "1.82",
+    "type": 1
+  }
+},
+{
+  "model": "restaurants.food",
+  "pk": 15,
+  "fields": {
+    "name": "Happen billion successful race.",
+    "price": "4.75",
+    "type": 1
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 1,
+  "fields": {
+    "dish": 5,
+    "ingredient": 1,
+    "portion": "0.03"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 2,
+  "fields": {
+    "dish": 3,
+    "ingredient": 5,
+    "portion": "0.43"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 4,
+  "fields": {
+    "dish": 2,
+    "ingredient": 5,
+    "portion": "0.21"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 5,
+  "fields": {
+    "dish": 3,
+    "ingredient": 1,
+    "portion": "0.90"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 6,
+  "fields": {
+    "dish": 15,
+    "ingredient": 8,
+    "portion": "0.23"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 7,
+  "fields": {
+    "dish": 15,
+    "ingredient": 5,
+    "portion": "1.22"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 8,
+  "fields": {
+    "dish": 15,
+    "ingredient": 3,
+    "portion": "6.00"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 9,
+  "fields": {
+    "dish": 14,
+    "ingredient": 7,
+    "portion": "0.22"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 10,
+  "fields": {
+    "dish": 14,
+    "ingredient": 6,
+    "portion": "0.77"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 11,
+  "fields": {
+    "dish": 14,
+    "ingredient": 1,
+    "portion": "1.00"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 12,
+  "fields": {
+    "dish": 13,
+    "ingredient": 9,
+    "portion": "2.00"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 13,
+  "fields": {
+    "dish": 13,
+    "ingredient": 1,
+    "portion": "0.50"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 14,
+  "fields": {
+    "dish": 12,
+    "ingredient": 1,
+    "portion": "1.50"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 15,
+  "fields": {
+    "dish": 12,
+    "ingredient": 5,
+    "portion": "0.45"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 16,
+  "fields": {
+    "dish": 12,
+    "ingredient": 2,
+    "portion": "2.00"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 17,
+  "fields": {
+    "dish": 11,
+    "ingredient": 5,
+    "portion": "1.00"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 18,
+  "fields": {
+    "dish": 11,
+    "ingredient": 8,
+    "portion": "2.00"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 19,
+  "fields": {
+    "dish": 11,
+    "ingredient": 4,
+    "portion": "3.00"
+  }
+}
+]
