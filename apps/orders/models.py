@@ -25,7 +25,7 @@ class Order(models.Model):
 
 class OrderContent(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
-    food = models.ForeignKey('restaurants.Food', on_delete=models.PROTECT)
+    food = models.ForeignKey('restaurants.Food', on_delete=models.PROTECT, related_name='orders')
     qty = models.PositiveIntegerField(_('quantity'))
 
     class Meta:

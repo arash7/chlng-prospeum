@@ -80,6 +80,7 @@ class Food(models.Model):
     price = models.DecimalField(_('price'), max_digits=20, decimal_places=2, default=0)
     type = models.PositiveSmallIntegerField(_('type'), choices=TYPE_CHOICES, editable=False)
     ingredients = models.ManyToManyField(Ingredient, through='DishIngredient')
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.PROTECT)
 
     def __str__(self):
         return self.name
@@ -117,3 +118,4 @@ class Stock(models.Model):
     created_time = models.DateTimeField(_('created time'), auto_now_add=True)
     ingredient = models.ForeignKey(Ingredient, on_delete=models.PROTECT, related_name='stock')
     amount = models.PositiveIntegerField(_('purchased amount'))
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.PROTECT)

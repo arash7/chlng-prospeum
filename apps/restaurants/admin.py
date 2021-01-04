@@ -27,8 +27,9 @@ class IngredientAdmin(admin.ModelAdmin):
 
 
 class FoodAdmin(admin.ModelAdmin):
-    list_display = ('name', 'type', 'price')
+    list_display = ('name', 'type', 'restaurant', 'price')
     search_fields = ('name', )
+    list_filter = ('restaurant',)
 
 
 class DishIngredientInline(admin.TabularInline):
@@ -59,6 +60,6 @@ class DishAdmin(FoodAdmin):
 
 @admin.register(Stock)
 class StockAdmin(admin.ModelAdmin):
-    list_display = ('ingredient', 'created_time', 'amount')
-    list_filter = ('created_time', 'ingredient')
+    list_display = ('ingredient', 'restaurant', 'created_time', 'amount')
+    list_filter = ('created_time', 'restaurant', 'ingredient')
     date_hierarchy = 'created_time'

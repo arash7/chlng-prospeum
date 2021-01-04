@@ -206,7 +206,8 @@
   "fields": {
     "name": "Which personal generation rise medical.",
     "price": "0.62",
-    "type": 22284
+    "type": 1,
+    "restaurant": 1
   }
 },
 {
@@ -215,7 +216,8 @@
   "fields": {
     "name": "Receive idea religious across fish let.",
     "price": "0.09",
-    "type": 2062
+    "type": 1,
+    "restaurant": 2
   }
 },
 {
@@ -224,7 +226,8 @@
   "fields": {
     "name": "Generation beyond treat.",
     "price": "0.75",
-    "type": 26069
+    "type": 1,
+    "restaurant": 3
   }
 },
 {
@@ -233,7 +236,8 @@
   "fields": {
     "name": "Price admit state way interesting film.",
     "price": "0.34",
-    "type": 79
+    "type": 1,
+    "restaurant": 4
   }
 },
 {
@@ -242,7 +246,8 @@
   "fields": {
     "name": "Stage third say could.",
     "price": "0.77",
-    "type": 30174
+    "type": 1,
+    "restaurant": 5
   }
 },
 {
@@ -251,7 +256,8 @@
   "fields": {
     "name": "Wine",
     "price": "0.50",
-    "type": 2
+    "type": 2,
+    "restaurant": 7
   }
 },
 {
@@ -260,7 +266,8 @@
   "fields": {
     "name": "Apple Juice",
     "price": "0.73",
-    "type": 2
+    "type": 2,
+    "restaurant": 1
   }
 },
 {
@@ -269,7 +276,8 @@
   "fields": {
     "name": "Coke",
     "price": "0.62",
-    "type": 2
+    "type": 2,
+    "restaurant": 2
   }
 },
 {
@@ -278,7 +286,8 @@
   "fields": {
     "name": "Beer",
     "price": "0.80",
-    "type": 2
+    "type": 2,
+    "restaurant": 4
   }
 },
 {
@@ -287,7 +296,8 @@
   "fields": {
     "name": "Cocktail",
     "price": "0.79",
-    "type": 2
+    "type": 2,
+    "restaurant": 6
   }
 },
 {
@@ -296,7 +306,8 @@
   "fields": {
     "name": "Executive close exist outside.",
     "price": "5.02",
-    "type": 1
+    "type": 1,
+    "restaurant": 7
   }
 },
 {
@@ -305,7 +316,8 @@
   "fields": {
     "name": "Vegan & Vegeterian",
     "price": "2.59",
-    "type": 1
+    "type": 1,
+    "restaurant": 5
   }
 },
 {
@@ -314,7 +326,8 @@
   "fields": {
     "name": "All Vegan",
     "price": "0.38",
-    "type": 1
+    "type": 1,
+    "restaurant": 3
   }
 },
 {
@@ -323,7 +336,8 @@
   "fields": {
     "name": "My child peace machine work national.",
     "price": "1.82",
-    "type": 1
+    "type": 1,
+    "restaurant": 2
   }
 },
 {
@@ -332,7 +346,8 @@
   "fields": {
     "name": "Happen billion successful race.",
     "price": "4.75",
-    "type": 1
+    "type": 1,
+    "restaurant": 1
   }
 },
 {
@@ -498,12 +513,58 @@
   }
 },
 {
+  "model": "restaurants.dishingredient",
+  "pk": 20,
+  "fields": {
+    "dish": 4,
+    "ingredient": 3,
+    "portion": "0.21"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 21,
+  "fields": {
+    "dish": 2,
+    "ingredient": 4,
+    "portion": "1.00"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 22,
+  "fields": {
+    "dish": 1,
+    "ingredient": 3,
+    "portion": "1.00"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 23,
+  "fields": {
+    "dish": 1,
+    "ingredient": 8,
+    "portion": "2.00"
+  }
+},
+{
+  "model": "restaurants.dishingredient",
+  "pk": 24,
+  "fields": {
+    "dish": 1,
+    "ingredient": 1,
+    "portion": "5.00"
+  }
+},
+{
   "model": "restaurants.stock",
   "pk": 1,
   "fields": {
     "created_time": "2021-01-04T06:57:19.646Z",
     "ingredient": 1,
-    "amount": 10
+    "amount": 10,
+    "restaurant": 7
   }
 },
 {
@@ -512,7 +573,8 @@
   "fields": {
     "created_time": "1980-12-10T08:21:30Z",
     "ingredient": 4,
-    "amount": 16063
+    "amount": 16063,
+    "restaurant": 2
   }
 },
 {
@@ -521,7 +583,8 @@
   "fields": {
     "created_time": "1993-05-04T05:07:32Z",
     "ingredient": 7,
-    "amount": 11935
+    "amount": 11935,
+    "restaurant": 1
   }
 },
 {
@@ -530,7 +593,8 @@
   "fields": {
     "created_time": "1970-12-01T03:27:21Z",
     "ingredient": 4,
-    "amount": 10373
+    "amount": 10373,
+    "restaurant": 7
   }
 },
 {
@@ -539,7 +603,8 @@
   "fields": {
     "created_time": "1980-03-27T18:36:14Z",
     "ingredient": 4,
-    "amount": 4952
+    "amount": 4952,
+    "restaurant": 6
   }
 },
 {
@@ -548,7 +613,8 @@
   "fields": {
     "created_time": "1973-01-29T10:25:43Z",
     "ingredient": 8,
-    "amount": 8156
+    "amount": 8156,
+    "restaurant": 5
   }
 },
 {
@@ -557,7 +623,8 @@
   "fields": {
     "created_time": "2003-07-25T13:05:03Z",
     "ingredient": 2,
-    "amount": 26380
+    "amount": 26380,
+    "restaurant": 4
   }
 },
 {
@@ -566,7 +633,8 @@
   "fields": {
     "created_time": "1983-09-25T13:55:03Z",
     "ingredient": 9,
-    "amount": 8948
+    "amount": 8948,
+    "restaurant": 3
   }
 },
 {
@@ -575,7 +643,8 @@
   "fields": {
     "created_time": "2008-08-19T15:25:48Z",
     "ingredient": 3,
-    "amount": 31037
+    "amount": 31037,
+    "restaurant": 2
   }
 },
 {
@@ -584,7 +653,8 @@
   "fields": {
     "created_time": "1998-04-03T22:58:13Z",
     "ingredient": 5,
-    "amount": 11854
+    "amount": 11854,
+    "restaurant": 1
   }
 },
 {
@@ -593,7 +663,8 @@
   "fields": {
     "created_time": "1991-03-23T00:10:11Z",
     "ingredient": 9,
-    "amount": 22368
+    "amount": 22368,
+    "restaurant": 7
   }
 },
 {
@@ -602,7 +673,8 @@
   "fields": {
     "created_time": "1983-08-10T06:19:26Z",
     "ingredient": 7,
-    "amount": 21895
+    "amount": 21895,
+    "restaurant": 6
   }
 },
 {
@@ -611,7 +683,8 @@
   "fields": {
     "created_time": "2000-03-12T10:12:07Z",
     "ingredient": 1,
-    "amount": 29738
+    "amount": 29738,
+    "restaurant": 5
   }
 },
 {
@@ -620,7 +693,8 @@
   "fields": {
     "created_time": "1995-04-24T16:21:27Z",
     "ingredient": 6,
-    "amount": 9799
+    "amount": 9799,
+    "restaurant": 4
   }
 },
 {
@@ -629,7 +703,8 @@
   "fields": {
     "created_time": "1984-06-11T08:43:25Z",
     "ingredient": 8,
-    "amount": 27423
+    "amount": 27423,
+    "restaurant": 3
   }
 },
 {
@@ -638,7 +713,8 @@
   "fields": {
     "created_time": "1999-05-31T19:44:17Z",
     "ingredient": 1,
-    "amount": 10881
+    "amount": 10881,
+    "restaurant": 2
   }
 },
 {
@@ -647,7 +723,8 @@
   "fields": {
     "created_time": "1973-12-27T06:34:07Z",
     "ingredient": 8,
-    "amount": 27240
+    "amount": 27240,
+    "restaurant": 1
   }
 },
 {
@@ -656,7 +733,8 @@
   "fields": {
     "created_time": "2007-06-07T10:45:37Z",
     "ingredient": 3,
-    "amount": 6430
+    "amount": 6430,
+    "restaurant": 7
   }
 },
 {
@@ -665,7 +743,8 @@
   "fields": {
     "created_time": "2006-02-16T22:02:25Z",
     "ingredient": 3,
-    "amount": 31168
+    "amount": 31168,
+    "restaurant": 6
   }
 },
 {
@@ -674,7 +753,8 @@
   "fields": {
     "created_time": "2008-03-02T02:07:21Z",
     "ingredient": 2,
-    "amount": 18678
+    "amount": 18678,
+    "restaurant": 5
   }
 },
 {
@@ -683,7 +763,8 @@
   "fields": {
     "created_time": "2008-05-07T05:49:26Z",
     "ingredient": 6,
-    "amount": 805
+    "amount": 805,
+    "restaurant": 4
   }
 },
 {
@@ -692,7 +773,8 @@
   "fields": {
     "created_time": "1975-08-15T08:04:25Z",
     "ingredient": 5,
-    "amount": 4031
+    "amount": 4031,
+    "restaurant": 3
   }
 },
 {
@@ -701,7 +783,8 @@
   "fields": {
     "created_time": "1976-03-29T21:36:17Z",
     "ingredient": 9,
-    "amount": 14943
+    "amount": 14943,
+    "restaurant": 2
   }
 },
 {
@@ -710,7 +793,8 @@
   "fields": {
     "created_time": "1972-05-03T14:05:21Z",
     "ingredient": 4,
-    "amount": 17054
+    "amount": 17054,
+    "restaurant": 1
   }
 },
 {
@@ -719,7 +803,8 @@
   "fields": {
     "created_time": "2002-07-13T03:00:25Z",
     "ingredient": 6,
-    "amount": 14692
+    "amount": 14692,
+    "restaurant": 7
   }
 },
 {
@@ -728,7 +813,8 @@
   "fields": {
     "created_time": "2008-08-18T17:59:47Z",
     "ingredient": 2,
-    "amount": 15947
+    "amount": 15947,
+    "restaurant": 6
   }
 },
 {
@@ -737,7 +823,8 @@
   "fields": {
     "created_time": "1984-12-05T02:31:55Z",
     "ingredient": 3,
-    "amount": 8170
+    "amount": 8170,
+    "restaurant": 5
   }
 },
 {
@@ -746,7 +833,8 @@
   "fields": {
     "created_time": "2014-09-05T17:32:06Z",
     "ingredient": 1,
-    "amount": 19719
+    "amount": 19719,
+    "restaurant": 4
   }
 },
 {
@@ -755,7 +843,8 @@
   "fields": {
     "created_time": "1978-12-07T05:01:16Z",
     "ingredient": 8,
-    "amount": 30754
+    "amount": 30754,
+    "restaurant": 3
   }
 },
 {
@@ -764,7 +853,8 @@
   "fields": {
     "created_time": "1991-11-28T12:41:47Z",
     "ingredient": 2,
-    "amount": 15563
+    "amount": 15563,
+    "restaurant": 2
   }
 },
 {
@@ -773,7 +863,8 @@
   "fields": {
     "created_time": "2019-12-09T19:08:43Z",
     "ingredient": 5,
-    "amount": 26955
+    "amount": 26955,
+    "restaurant": 1
   }
 }
 ]

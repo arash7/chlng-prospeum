@@ -10,6 +10,6 @@ psycopg2_binary
 # python-memcached
 # Pillow
 
-# django-filter
+django-filter
 drf-yasg
 django-seed
