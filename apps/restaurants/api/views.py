@@ -2,8 +2,8 @@ from rest_framework import viewsets
 from rest_framework.permissions import IsAdminUser, DjangoModelPermissions
 from rest_framework_simplejwt.authentication import JWTAuthentication
 
-from ..models import Restaurant, Ingredient, Dish, Beverage
-from .serializers import RestaurantSerializer, IngredientSerializer, DishSerializer, BeverageSerializer
+from ..models import Restaurant, Ingredient, Dish, Beverage, Stock
+from .serializers import RestaurantSerializer, IngredientSerializer, DishSerializer, BeverageSerializer, StockSerializer
 
 
 class BaseCRUD(viewsets.ModelViewSet):
@@ -44,3 +44,11 @@ class BeverageViewSet(BaseCRUD):
     """
     queryset = Beverage.objects.filter(type=Dish.TYPE_BEVERAGE)
     serializer_class = BeverageSerializer
+
+
+class StockViewSet(BaseCRUD):
+    """
+    A simple ViewSet for Stock CRUD operations.
+    """
+    queryset = Stock.objects.all()
+    serializer_class = StockSerializer

@@ -2,7 +2,7 @@ from django.utils.translation import ugettext_lazy as _
 
 from rest_framework import serializers, exceptions
 
-from ..models import Restaurant, Ingredient, DishIngredient, Dish, Beverage
+from ..models import Restaurant, Ingredient, DishIngredient, Dish, Beverage, Stock
 
 
 class RestaurantSerializer(serializers.ModelSerializer):
@@ -62,3 +62,10 @@ class BeverageSerializer(serializers.ModelSerializer):
         if value <= 0:
             raise exceptions.ParseError(_('price is invalid!'))
         return value
+
+
+class StockSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Stock
+        fields = '__all__'

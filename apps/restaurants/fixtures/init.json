@@ -496,5 +496,284 @@
     "ingredient": 4,
     "portion": "3.00"
   }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 1,
+  "fields": {
+    "created_time": "2021-01-04T06:57:19.646Z",
+    "ingredient": 1,
+    "amount": 10
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 2,
+  "fields": {
+    "created_time": "1980-12-10T08:21:30Z",
+    "ingredient": 4,
+    "amount": 16063
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 3,
+  "fields": {
+    "created_time": "1993-05-04T05:07:32Z",
+    "ingredient": 7,
+    "amount": 11935
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 4,
+  "fields": {
+    "created_time": "1970-12-01T03:27:21Z",
+    "ingredient": 4,
+    "amount": 10373
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 5,
+  "fields": {
+    "created_time": "1980-03-27T18:36:14Z",
+    "ingredient": 4,
+    "amount": 4952
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 6,
+  "fields": {
+    "created_time": "1973-01-29T10:25:43Z",
+    "ingredient": 8,
+    "amount": 8156
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 7,
+  "fields": {
+    "created_time": "2003-07-25T13:05:03Z",
+    "ingredient": 2,
+    "amount": 26380
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 8,
+  "fields": {
+    "created_time": "1983-09-25T13:55:03Z",
+    "ingredient": 9,
+    "amount": 8948
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 9,
+  "fields": {
+    "created_time": "2008-08-19T15:25:48Z",
+    "ingredient": 3,
+    "amount": 31037
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 10,
+  "fields": {
+    "created_time": "1998-04-03T22:58:13Z",
+    "ingredient": 5,
+    "amount": 11854
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 11,
+  "fields": {
+    "created_time": "1991-03-23T00:10:11Z",
+    "ingredient": 9,
+    "amount": 22368
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 12,
+  "fields": {
+    "created_time": "1983-08-10T06:19:26Z",
+    "ingredient": 7,
+    "amount": 21895
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 13,
+  "fields": {
+    "created_time": "2000-03-12T10:12:07Z",
+    "ingredient": 1,
+    "amount": 29738
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 14,
+  "fields": {
+    "created_time": "1995-04-24T16:21:27Z",
+    "ingredient": 6,
+    "amount": 9799
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 15,
+  "fields": {
+    "created_time": "1984-06-11T08:43:25Z",
+    "ingredient": 8,
+    "amount": 27423
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 16,
+  "fields": {
+    "created_time": "1999-05-31T19:44:17Z",
+    "ingredient": 1,
+    "amount": 10881
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 17,
+  "fields": {
+    "created_time": "1973-12-27T06:34:07Z",
+    "ingredient": 8,
+    "amount": 27240
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 18,
+  "fields": {
+    "created_time": "2007-06-07T10:45:37Z",
+    "ingredient": 3,
+    "amount": 6430
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 19,
+  "fields": {
+    "created_time": "2006-02-16T22:02:25Z",
+    "ingredient": 3,
+    "amount": 31168
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 20,
+  "fields": {
+    "created_time": "2008-03-02T02:07:21Z",
+    "ingredient": 2,
+    "amount": 18678
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 21,
+  "fields": {
+    "created_time": "2008-05-07T05:49:26Z",
+    "ingredient": 6,
+    "amount": 805
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 22,
+  "fields": {
+    "created_time": "1975-08-15T08:04:25Z",
+    "ingredient": 5,
+    "amount": 4031
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 23,
+  "fields": {
+    "created_time": "1976-03-29T21:36:17Z",
+    "ingredient": 9,
+    "amount": 14943
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 24,
+  "fields": {
+    "created_time": "1972-05-03T14:05:21Z",
+    "ingredient": 4,
+    "amount": 17054
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 25,
+  "fields": {
+    "created_time": "2002-07-13T03:00:25Z",
+    "ingredient": 6,
+    "amount": 14692
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 26,
+  "fields": {
+    "created_time": "2008-08-18T17:59:47Z",
+    "ingredient": 2,
+    "amount": 15947
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 27,
+  "fields": {
+    "created_time": "1984-12-05T02:31:55Z",
+    "ingredient": 3,
+    "amount": 8170
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 28,
+  "fields": {
+    "created_time": "2014-09-05T17:32:06Z",
+    "ingredient": 1,
+    "amount": 19719
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 29,
+  "fields": {
+    "created_time": "1978-12-07T05:01:16Z",
+    "ingredient": 8,
+    "amount": 30754
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 30,
+  "fields": {
+    "created_time": "1991-11-28T12:41:47Z",
+    "ingredient": 2,
+    "amount": 15563
+  }
+},
+{
+  "model": "restaurants.stock",
+  "pk": 31,
+  "fields": {
+    "created_time": "2019-12-09T19:08:43Z",
+    "ingredient": 5,
+    "amount": 26955
+  }
 }
 ]

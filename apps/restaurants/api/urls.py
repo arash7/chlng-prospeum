@@ -7,4 +7,5 @@ router.register(r'crud/restaurants', RestaurantViewSet)
 router.register(r'crud/ingredients', IngredientViewSet)
 router.register(r'crud/dishes', DishViewSet)
 router.register(r'crud/beverages', BeverageViewSet)
+router.register(r'crud/stock', BeverageViewSet)
 urlpatterns = router.urls

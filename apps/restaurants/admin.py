@@ -1,7 +1,7 @@
 from django.contrib import admin
 # from django.utils.translation import ugettext_lazy as _
 
-from .models import Restaurant, City, Ingredient, DishIngredient, Dish, Beverage
+from .models import Restaurant, City, Ingredient, DishIngredient, Dish, Beverage, Stock
 
 
 @admin.register(City)
@@ -55,3 +55,10 @@ class DishAdmin(FoodAdmin):
     def get_queryset(self, request):
         qs = super().get_queryset(request)
         return qs.filter(type=Dish.TYPE_DISH)
+
+
+@admin.register(Stock)
+class StockAdmin(admin.ModelAdmin):
+    list_display = ('ingredient', 'created_time', 'amount')
+    list_filter = ('created_time', 'ingredient')
+    date_hierarchy = 'created_time'

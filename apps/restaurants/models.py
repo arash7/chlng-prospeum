@@ -111,3 +111,9 @@ class DishIngredient(models.Model):
 
     class Meta:
         unique_together = ('dish', 'ingredient')
+
+
+class Stock(models.Model):
+    created_time = models.DateTimeField(_('created time'), auto_now_add=True)
+    ingredient = models.ForeignKey(Ingredient, on_delete=models.PROTECT, related_name='stock')
+    amount = models.PositiveIntegerField(_('purchased amount'))

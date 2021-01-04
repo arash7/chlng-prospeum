@@ -1,0 +1,23 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        {% for g in guests %}
+            <input type="hidden" name="_selected_action" value="{{ g.pk }}" />
+        {% endfor %}
+
+        <ul>
+            {% for g in guests %}
+                <li>{{ g.email }}</li>
+            {% endfor %}
+        </ul>
+        <input type="hidden" name="action" value="notify_selected_guests" />
+        <input type="submit" name="send_notify" value="Send"/>
+    </form>
+
+{% endblock %}
