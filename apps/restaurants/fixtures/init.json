@@ -31,11 +31,12 @@
   "pk": 1,
   "fields": {
     "created_time": "2020-12-31T12:10:35.716Z",
-    "updated_time": "2020-12-31T12:12:41.618Z",
+    "updated_time": "2021-01-05T08:20:50.583Z",
     "name": "c1",
     "restaurant_type": "ch",
     "city": 1,
-    "is_enable": true
+    "is_enable": true,
+    "seats": 10
   }
 },
 {
@@ -43,11 +44,12 @@
   "pk": 2,
   "fields": {
     "created_time": "2020-12-31T12:10:47.025Z",
-    "updated_time": "2020-12-31T12:12:46.627Z",
+    "updated_time": "2021-01-05T08:20:56.743Z",
     "name": "c2",
     "restaurant_type": "ch",
     "city": 1,
-    "is_enable": true
+    "is_enable": true,
+    "seats": 15
   }
 },
 {
@@ -59,7 +61,8 @@
     "name": "c3",
     "restaurant_type": "ch",
     "city": 2,
-    "is_enable": true
+    "is_enable": true,
+    "seats": 0
   }
 },
 {
@@ -67,11 +70,12 @@
   "pk": 4,
   "fields": {
     "created_time": "2020-12-31T12:11:27.641Z",
-    "updated_time": "2020-12-31T12:12:56.952Z",
+    "updated_time": "2021-01-05T08:21:08.017Z",
     "name": "i1",
     "restaurant_type": "it",
     "city": 2,
-    "is_enable": true
+    "is_enable": true,
+    "seats": 22
   }
 },
 {
@@ -79,11 +83,12 @@
   "pk": 5,
   "fields": {
     "created_time": "2020-12-31T12:12:36.154Z",
-    "updated_time": "2020-12-31T12:12:36.154Z",
+    "updated_time": "2021-01-05T08:21:14.030Z",
     "name": "b1",
     "restaurant_type": "bv",
     "city": 1,
-    "is_enable": true
+    "is_enable": true,
+    "seats": 30
   }
 },
 {
@@ -91,11 +96,12 @@
   "pk": 6,
   "fields": {
     "created_time": "2020-12-31T12:13:47.013Z",
-    "updated_time": "2020-12-31T12:13:47.013Z",
+    "updated_time": "2021-01-05T08:21:21.529Z",
     "name": "i2",
     "restaurant_type": "it",
     "city": 3,
-    "is_enable": true
+    "is_enable": true,
+    "seats": 12
   }
 },
 {
@@ -103,17 +109,20 @@
   "pk": 7,
   "fields": {
     "created_time": "2020-12-31T12:13:56.998Z",
-    "updated_time": "2020-12-31T12:13:56.998Z",
+    "updated_time": "2021-01-05T08:21:30.666Z",
     "name": "b2",
     "restaurant_type": "bv",
     "city": 3,
-    "is_enable": true
+    "is_enable": true,
+    "seats": 18
   }
 },
 {
   "model": "restaurants.ingredient",
   "pk": 1,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.643Z",
+    "updated_time": "2021-01-05T08:12:27.666Z",
     "name": "Carrot",
     "price": "0.33",
     "type": 5,
@@ -124,6 +133,8 @@
   "model": "restaurants.ingredient",
   "pk": 2,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.643Z",
+    "updated_time": "2021-01-05T08:12:27.666Z",
     "name": "Milk",
     "price": "0.98",
     "type": 4,
@@ -134,6 +145,8 @@
   "model": "restaurants.ingredient",
   "pk": 3,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.643Z",
+    "updated_time": "2021-01-05T08:12:27.666Z",
     "name": "Sugar",
     "price": "0.69",
     "type": 5,
@@ -144,6 +157,8 @@
   "model": "restaurants.ingredient",
   "pk": 4,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.643Z",
+    "updated_time": "2021-01-05T08:12:27.666Z",
     "name": "Egg",
     "price": "0.86",
     "type": 1,
@@ -154,6 +169,8 @@
   "model": "restaurants.ingredient",
   "pk": 5,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.643Z",
+    "updated_time": "2021-01-05T08:12:27.666Z",
     "name": "Flour",
     "price": "0.30",
     "type": 4,
@@ -164,6 +181,8 @@
   "model": "restaurants.ingredient",
   "pk": 6,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.643Z",
+    "updated_time": "2021-01-05T08:12:27.666Z",
     "name": "Steak",
     "price": "1.23",
     "type": 2,
@@ -174,6 +193,8 @@
   "model": "restaurants.ingredient",
   "pk": 7,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.643Z",
+    "updated_time": "2021-01-05T08:12:27.666Z",
     "name": "Bacon",
     "price": "2.45",
     "type": 3,
@@ -184,6 +205,8 @@
   "model": "restaurants.ingredient",
   "pk": 8,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.643Z",
+    "updated_time": "2021-01-05T08:12:27.666Z",
     "name": "Chicken Fillet",
     "price": "1.07",
     "type": 1,
@@ -194,6 +217,8 @@
   "model": "restaurants.ingredient",
   "pk": 9,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.643Z",
+    "updated_time": "2021-01-05T08:12:27.666Z",
     "name": "Salt",
     "price": "0.11",
     "type": 5,
@@ -204,150 +229,180 @@
   "model": "restaurants.food",
   "pk": 1,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:43:28.410Z",
     "name": "Which personal generation rise medical.",
     "price": "0.62",
     "type": 1,
-    "restaurant": 1
+    "kind": "bv"
   }
 },
 {
   "model": "restaurants.food",
   "pk": 2,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:12:27.615Z",
     "name": "Receive idea religious across fish let.",
     "price": "0.09",
     "type": 1,
-    "restaurant": 2
+    "kind": "it"
   }
 },
 {
   "model": "restaurants.food",
   "pk": 3,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:43:22.818Z",
     "name": "Generation beyond treat.",
     "price": "0.75",
     "type": 1,
-    "restaurant": 3
+    "kind": "ch"
   }
 },
 {
   "model": "restaurants.food",
   "pk": 4,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:43:18.246Z",
     "name": "Price admit state way interesting film.",
     "price": "0.34",
     "type": 1,
-    "restaurant": 4
+    "kind": "bv"
   }
 },
 {
   "model": "restaurants.food",
   "pk": 5,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:12:27.615Z",
     "name": "Stage third say could.",
     "price": "0.77",
     "type": 1,
-    "restaurant": 5
+    "kind": "it"
   }
 },
 {
   "model": "restaurants.food",
   "pk": 6,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:12:27.615Z",
     "name": "Wine",
     "price": "0.50",
     "type": 2,
-    "restaurant": 7
+    "kind": "it"
   }
 },
 {
   "model": "restaurants.food",
   "pk": 7,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:43:46.680Z",
     "name": "Apple Juice",
     "price": "0.73",
     "type": 2,
-    "restaurant": 1
+    "kind": "ch"
   }
 },
 {
   "model": "restaurants.food",
   "pk": 8,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:44:52.959Z",
     "name": "Coke",
     "price": "0.62",
     "type": 2,
-    "restaurant": 2
+    "kind": ""
   }
 },
 {
   "model": "restaurants.food",
   "pk": 9,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:43:40.639Z",
     "name": "Beer",
     "price": "0.80",
     "type": 2,
-    "restaurant": 4
+    "kind": "bv"
   }
 },
 {
   "model": "restaurants.food",
   "pk": 10,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:12:27.615Z",
     "name": "Cocktail",
     "price": "0.79",
     "type": 2,
-    "restaurant": 6
+    "kind": "it"
   }
 },
 {
   "model": "restaurants.food",
   "pk": 11,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:43:12.450Z",
     "name": "Executive close exist outside.",
     "price": "5.02",
     "type": 1,
-    "restaurant": 7
+    "kind": "bv"
   }
 },
 {
   "model": "restaurants.food",
   "pk": 12,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:45:08.958Z",
     "name": "Vegan & Vegeterian",
     "price": "2.59",
     "type": 1,
-    "restaurant": 5
+    "kind": ""
   }
 },
 {
   "model": "restaurants.food",
   "pk": 13,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:12:27.615Z",
     "name": "All Vegan",
     "price": "0.38",
     "type": 1,
-    "restaurant": 3
+    "kind": "it"
   }
 },
 {
   "model": "restaurants.food",
   "pk": 14,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:43:02.496Z",
     "name": "My child peace machine work national.",
     "price": "1.82",
     "type": 1,
-    "restaurant": 2
+    "kind": "bv"
   }
 },
 {
   "model": "restaurants.food",
   "pk": 15,
   "fields": {
+    "created_time": "2021-01-05T08:12:27.551Z",
+    "updated_time": "2021-01-05T08:42:57.890Z",
     "name": "Happen billion successful race.",
     "price": "4.75",
     "type": 1,
-    "restaurant": 1
+    "kind": "ch"
   }
 },
 {
@@ -579,16 +634,6 @@
 },
 {
   "model": "restaurants.stock",
-  "pk": 3,
-  "fields": {
-    "created_time": "1993-05-04T05:07:32Z",
-    "ingredient": 7,
-    "amount": 11935,
-    "restaurant": 1
-  }
-},
-{
-  "model": "restaurants.stock",
   "pk": 4,
   "fields": {
     "created_time": "1970-12-01T03:27:21Z",
@@ -665,16 +710,6 @@
     "ingredient": 9,
     "amount": 22368,
     "restaurant": 7
-  }
-},
-{
-  "model": "restaurants.stock",
-  "pk": 12,
-  "fields": {
-    "created_time": "1983-08-10T06:19:26Z",
-    "ingredient": 7,
-    "amount": 21895,
-    "restaurant": 6
   }
 },
 {

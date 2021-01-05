@@ -13,8 +13,6 @@ class Order(models.Model):
     # reservation_time = DateTimeRangeField(_('reservation time'))
     is_takeout = models.BooleanField(_('is takeout'), default=False)
 
-    content = models.ManyToManyField('restaurants.Food', through='OrderContent', blank=False)
-
     def __str__(self):
         return f'{self.restaurant_id} - {self.guest_id} - {self.reservation_date}'
 
@@ -24,7 +22,7 @@ class Order(models.Model):
 
 
 class OrderContent(models.Model):
-    order = models.ForeignKey(Order, on_delete=models.CASCADE)
+    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='contents')
     food = models.ForeignKey('restaurants.Food', on_delete=models.PROTECT, related_name='orders')
     qty = models.PositiveIntegerField(_('quantity'))
 

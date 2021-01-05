@@ -36,6 +36,7 @@ class Restaurant(models.Model):
     restaurant_type = models.CharField(_('type'), max_length=2, choices=TYPE_CHOICES)
     city = models.ForeignKey(City, on_delete=models.PROTECT)
     is_enable = models.BooleanField(_('is enable?'), default=True)
+    seats = models.PositiveSmallIntegerField(_('seats'), default=0)
     # owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.PROTECT)
 
     objects = models.Manager()
@@ -59,6 +60,8 @@ class Ingredient(models.Model):
         (TYPE_VEGAN, _('vegan')),
     )
 
+    created_time = models.DateTimeField(_('created time'), auto_now_add=True)
+    updated_time = models.DateTimeField(_('updated time'), auto_now=True)
     name = models.CharField(_('name'), max_length=20)
     price = models.DecimalField(_('price'), max_digits=10, decimal_places=2, help_text=_('Price per portion'))
     type = models.PositiveSmallIntegerField(_('type'), choices=TYPE_CHOICES)
@@ -76,11 +79,13 @@ class Food(models.Model):
         (TYPE_BEVERAGE, _('beverage')),
     )
 
+    created_time = models.DateTimeField(_('created time'), auto_now_add=True)
+    updated_time = models.DateTimeField(_('updated time'), auto_now=True)
     name = models.CharField(_('name'), max_length=40)
     price = models.DecimalField(_('price'), max_digits=20, decimal_places=2, default=0)
     type = models.PositiveSmallIntegerField(_('type'), choices=TYPE_CHOICES, editable=False)
     ingredients = models.ManyToManyField(Ingredient, through='DishIngredient')
-    restaurant = models.ForeignKey(Restaurant, on_delete=models.PROTECT)
+    kind = models.CharField(_('food type'), max_length=2, choices=Restaurant.TYPE_CHOICES, blank=True)
 
     def __str__(self):
         return self.name

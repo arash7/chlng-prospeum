@@ -12,7 +12,7 @@ class CityAdmin(admin.ModelAdmin):
 
 @admin.register(Restaurant)
 class RestaurantAdmin(admin.ModelAdmin):
-    list_display = ('name', 'restaurant_type', 'city', 'is_enable')
+    list_display = ('name', 'restaurant_type', 'city', 'seats', 'is_enable')
     search_fields = ('name', )
     list_filter = ('is_enable', 'restaurant_type', 'city')
     list_select_related = ('city',)
@@ -27,9 +27,9 @@ class IngredientAdmin(admin.ModelAdmin):
 
 
 class FoodAdmin(admin.ModelAdmin):
-    list_display = ('name', 'type', 'restaurant', 'price')
+    list_display = ('name', 'type', 'kind', 'price')
     search_fields = ('name', )
-    list_filter = ('restaurant',)
+    list_filter = ('kind',)
 
 
 class DishIngredientInline(admin.TabularInline):
